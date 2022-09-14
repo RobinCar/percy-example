@@ -1,0 +1,18 @@
+.wrapper {
+  height: 100%;
+}
+
+.header {
+  background-color: #ef5350;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+}
+
+.headerWrapper {
+  flex: 1;
+  max-width: 72rem;
+  margin: auto;
+  display: flex;
+}
