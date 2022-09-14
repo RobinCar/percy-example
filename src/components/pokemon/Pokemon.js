@@ -7,13 +7,13 @@ const imageSrc = (id) =>
 const Pokemon = ({ name, id, weight, height }) => {
   return (
     <div class="card">
-      <div>{name}</div>
+      <div data-cy="name">{name}</div>
       <div>
         <img src={imageSrc(id)} alt=""></img>
       </div>
-      <div>Id: {id}</div>
-      <div>Weight: {weight}</div>
-      <div>Height: {height}</div>
+      <div data-cy="id">{id}</div>
+      <div data-cy="weight">Weight: {weight}</div>
+      <div data-cy="height">Height: {height}</div>
     </div>
   );
 };
