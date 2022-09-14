@@ -10,5 +10,7 @@ jobs:
       # and run all Cypress tests
       - name: Install dependencies
         run: npm ci
-      - name: Cypress Tests
-        run: npx cypress run --component
+      - name: Percy Tests
+        run: npx percy exec -- cypress run --component
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
